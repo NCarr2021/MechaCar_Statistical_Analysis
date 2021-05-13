@@ -19,7 +19,7 @@ Coils %>%
             Variance = var(PSI),
             SD = sd(PSI))
 
-# Lot Summary
+# Lot Summary 
 Coils %>%
   group_by(Manufacturing_Lot) %>%
   summarize(Mean = mean(PSI),
@@ -27,6 +27,13 @@ Coils %>%
             Variance = var(PSI),
             SD = sd(PSI))
 
+?t.test()
+
+# T-Tests - All and separate lots
+t.test(Coils$PSI, mu = 1500)
+t.test(subset(Coils, Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
+t.test(subset(Coils, Manufacturing_Lot == "Lot2")$PSI, mu = 1500)
+t.test(subset(Coils, Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
 
 
 
