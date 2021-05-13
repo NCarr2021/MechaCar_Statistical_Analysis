@@ -20,7 +20,12 @@ Coils %>%
             SD = sd(PSI))
 
 # Lot Summary
-
+Coils %>%
+  group_by(Manufacturing_Lot) %>%
+  summarize(Mean = mean(PSI),
+            Median = median(PSI),
+            Variance = var(PSI),
+            SD = sd(PSI))
 
 
 
