@@ -38,3 +38,6 @@ t.test(subset(Coils, Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
 
 
 
+
+
+
