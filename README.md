@@ -16,16 +16,16 @@ The slope is not considered zero. A near zero slope means that some of the indep
 
 The R-squared value of 0.7149 indicates 71% of the instances would approximated predict the correct mpg.
 
-![LinearRegression](LinearRegression.png)
+![LinearRegression](Resources/LinearRegression.png)
 
 
 ## Summary Statistics on Suspension
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-![Coils-Summary](Coils-Summary.png)
+![Coils-Summary](Resources/Coils-Summary.png)
 
-![Coils-Summary-GroupBy](Coils-Summary-GroupBy.png)
+![Coils-Summary-GroupBy](Resources/Coils-Summary-GroupBy.png)
 
 In the Coils-Summary.png, the variance is 62.29356 which meets the 100 pounds per sqare inch limit. The Coils-Summary-GroupBy.png breaks down each lot. All three lots combined exceed the limit since the variance for Lot3 is by itself 170. and over the limit. Individually Lot1 at 0.980 and Lot2 at 7.47 meet the limit. Combining Lot1 and Lot2 would also be under the limit.
 
@@ -41,7 +41,7 @@ Lot 1 t-value = 0, p-value = 1
 Lot 2 t-value = 0.51745, p-value = 0.6072 
 Lot 3 t-value = -2.0916, p-value = 0.04168
 
-![TTest-Results](TTest-Results.png)
+![TTest-Results](Resources/TTest-Results.png)
 
 
 # Study Design: MechaCar vs Competition
